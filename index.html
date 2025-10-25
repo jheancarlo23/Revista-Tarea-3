@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista: Fases de la Vida</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fuente Inter (predeterminada en Tailwind) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Pequeña sombra para el texto de la portada */
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-200">
+
+    <!-- Contenedor principal de la revista -->
+    <main class="max-w-5xl mx-auto bg-white shadow-2xl my-8 rounded-lg overflow-hidden">
+
+        <!-- 1. Portada -->
+        <section id="portada" class="relative h-[500px] text-white">
+    <!-- Imagen de fondo representativa -->
+    <img src="https://www.gob.mx/cms/uploads/article/main_image/89027/Blog-Gerontologia-2.jpg" 
+         alt="Imagen representativa de las fases de la vida" 
+         class="absolute inset-0 w-full h-full object-cover">
+            
+            <!-- Contenido superpuesto -->
+            <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-between p-8 md:p-12">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-black text-shadow drop-shadow-lg">
+                        Desarrollo Humano:
+                        <span class="block text-indigo-300">Adultez y Vejez</span>
+                    </h1>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-between items-end">
+                    <!-- Integrantes -->
+                    <div class="mb-4 md:mb-0">
+                        <h2 class="text-lg font-semibold mb-2">Integrantes:</h2>
+                        <ul class="list-none space-y-1 text-sm">
+                            <li>Nayive Nieto Gonzalez</li>
+                            <li>Natalia Hincapie Zambrano</li>
+                            <li>Edna Yenifer Suarez Hernandez</li>
+                            <li>Jhean Carlo Rios Lopez</li>
+                            <li>Maria Paula Vanegas Giraldo</li>
+                        </ul>
+                    </div>
+                    <!-- Fecha -->
+                    <div class="text-right">
+                        <p class="text-lg font-semibold">25 de Octubre del 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Índice (Barra de Navegación Fija) -->
+        <nav id="indice" class="sticky top-0 bg-white shadow-md z-10 border-b border-gray-200">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="flex justify-center items-center py-3 flex-wrap">
+                    <a href="#editorial" class="px-3 py-2 text-sm md:text-base font-medium text-gray-700 hover:text-indigo-600 rounded-md">Editorial</a>
+                    <a href="#adultez" class="px-3 py-2 text-sm md:text-base font-medium text-gray-700 hover:text-indigo-600 rounded-md">Adultez</a>
+                    <a href="#reco-adultez" class="px-3 py-2 text-sm md:text-base font-medium text-gray-700 hover:text-indigo-600 rounded-md">Recomendaciones (Adultez)</a>
+                    <a href="#vejez" class="px-3 py-2 text-sm md:text-base font-medium text-gray-700 hover:text-indigo-600 rounded-md">Vejez</a>
+                    <a href="#reco-vejez" class="px-3 py-2 text-sm md:text-base font-medium text-gray-700 hover:text-indigo-600 rounded-md">Recomendaciones (Vejez)</a>
+                    <a href="#compromiso" class="px-3 py-2 text-sm md:text-base font-medium text-gray-700 hover:text-indigo-600 rounded-md">Compromiso Social</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 3. Editorial -->
+        <section id="editorial" class="p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-6 border-b-2 border-indigo-200 pb-2">
+                Editorial
+            </h2>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
+                Bienvenidos a este número especial dedicado a dos de las etapas más extensas y significativas del desarrollo humano: la adultez y la vejez. A menudo, el enfoque popular se centra en la infancia y la adolescencia, dejando de lado la riqueza y complejidad de las décadas que le siguen. Sin embargo, es en la adultez (La edad adulta se divide en dos etapas, la edad adulta temprana que está determinada entre los 18 y 40/45 años de edad; y la edad adulta intermedia que se posiciona entre los 40/45 hasta los 67 años de edad) donde consolidamos nuestra identidad y proyecto de vida, y en la vejez donde cosechamos la sabiduría de la experiencia.
+            </p>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                En esta edición, exploraremos estas etapas no como un destino estático, sino como un proceso dinámico y multidimensional. Analizaremos las cinco dimensiones clave (cognitiva, emocional, biológica, social/cultural y de identidad) que nos permiten comprender integralmente al ser humano. Nuestro objetivo es desmitificar, informar y, sobre todo, fomentar un compromiso empático desde la psicología para acompañar con dignidad y bienestar cada fase de la vida.
+            </p>
+        </section>
+
+        <!-- 4. Sección Adultez -->
+        <section id="adultez" class="p-8 md:p-12 bg-gray-50">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-8 border-b-2 border-indigo-200 pb-2">
+                La Adultez: Plenitud y Desafíos
+            </h2>
+            <div class="space-y-6">
+                <!-- Dimensiones -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">1. Dimensión Cognitiva</h3>
+                    <p class="text-gray-700">En la adultez (especialmente la adultez media), alcanzamos el pensamiento postformal. Esto implica una mayor flexibilidad cognitiva, la capacidad de integrar la lógica con la emoción y la intuición, y entender que los problemas pueden tener múltiples soluciones o ninguna solución perfecta. Se desarrolla la "pericia" o "expertise" en áreas específicas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">2. Dimensión Emocional</h3>
+                    <p class="text-gray-700">Según Erik Erikson, la adultez temprana se centra en el conflicto "Intimidad vs. Aislamiento" (formar vínculos profundos). La adultez media aborda la "Generatividad vs. Estancamiento", buscando dejar un legado y contribuir a las siguientes generaciones, ya sea a través de la crianza, el trabajo o la mentoría.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">3. Dimensión Biológica</h3>
+                    <p class="text-gray-700">La dimensión biológica en la adultez está determinada por una serie de cambios físicos, sensoriales, hormonales, neurológicos y funcionales. Los adultos jóvenes (Entre los 18 y 40/45 años de edad) son los que gozan de mejor salud, los cambios en su apariencia física son casi imperceptibles, apareciendo algunas arrugas alrededor de los ojos. Es una edad reproductiva y en que goza de muy buena motricidad y sus sentidos gozan de buena agudeza.
+En la edad adulta tardía (Entre los 40/45 hasta los 67 años de edad) es donde los cambios se hacen más notorios y se empieza a mostrar un declive en el funcionamiento de los órganos. Las arrugas, manchas y flacidez en la piel se empiezan a notar debido a la disminución de colágeno. La estatura empieza a disminuir a partir de los 50 años, se pierde aproximadamente 1.25 cm cada década; la grasa se empieza a acumular en la zona de las caderas de las mujeres y en cuanto a los hombres en la zona de la cintura. 
+A partir de los 50 hay una disminución de fuerza y de masa muscular, esto se conoce como sarcopenia; como también en los sentidos, siendo la vista (presbiopía) y el oído los más afectados. La pérdida de audición es conocida como presbiacusia y son los hombres quienes generalmente empiezan a padecer esta deficiencia a partir de los 30 años, mientras que las mujeres a partir de los 50.
+</p>
+<!-- Botón y contenido de Datos Curiosos -->
+<div class="mt-4">
+    <button 
+        onclick="document.getElementById('datosCuriososAdultez').classList.toggle('hidden')" 
+        class="bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg hover:bg-indigo-200 transition duration-300 text-sm">
+        Datos Curiosos
+    </button>
+    <div id="datosCuriososAdultez" class="hidden mt-3 p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-900 space-y-2">
+        <p>• Hay una reducción del flujo sanguíneo y la tensión arterial aumenta entre los 40 y 60 años.</p>
+        <p>• A partir de los 40 empieza una disminución en el tiempo de sueño profundo.</p>
+    </div>
+</div>
+<!-- Fin de Datos Curiosos -->
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">4. Dimensión Social y Cultural</h3>
+                    <p class="text-gray-700">En esta fase, la vida social es muy activa. Las personas suelen tener muchos roles al mismo tiempo, como ser profesional, pareja, padre o madre, y a veces también cuidar de sus propios padres ya mayores. La cultura también influye en las expectativas sobre cuándo casarse, tener hijos o lograr el éxito en el trabajo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">5. Dimensión de Identidad</h3>
+                    <p class="text-gray-700">La identidad se consolida y se vuelve más estable, pero también se reevalúa constantemente frente a los cambios de roles. La carrera profesional y la familia se convierten en pilares centrales de la identidad adulta. La crisis de la mediana edad, aunque no universal, representa una reevaluación profunda del proyecto de vida.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Recomendaciones Adultez -->
+        <section id="reco-adultez" class="p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-8 border-b-2 border-indigo-200 pb-2">
+                Recomendaciones Útiles en la Adultez
+            </h2>
+            <ul class="list-none space-y-4">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span><strong>Manejo del Estrés:</strong> Desarrollar técnicas de afrontamiento saludables (ejercicio, mindfulness, hobbies) para equilibrar las múltiples demandas laborales y familiares.</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span><strong>Aprendizaje Continuo:</strong> Mantener la mente activa y adaptarse a los cambios (tecnológicos, laborales) mediante la educación continua o el aprendizaje de nuevas habilidades.</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span><strong>Cuidar los Vínculos:</strong> Invertir tiempo de calidad en la pareja, amistades y familia. La "generatividad" también implica nutrir las relaciones existentes.</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span><strong>Salud Preventiva:</strong> No ignorar los chequeos médicos. Adoptar y mantener una dieta equilibrada y una rutina de ejercicio regular para mitigar los efectos de la senescencia.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 6. Sección Vejez -->
+        <section id="vejez" class="p-8 md:p-12 bg-gray-50">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-8 border-b-2 border-indigo-200 pb-2">
+                La Vejez: Sabiduría y Adaptación
+            </h2>
+            <div class="space-y-6">
+                <!-- Dimensiones -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">1. Dimensión Cognitiva</h3>
+                    <p class="text-gray-700">La inteligencia fluida (rapidez de procesamiento) puede disminuir, pero la inteligencia cristalizada (conocimiento acumulado, experiencia) se mantiene o incluso aumenta. Surge la "sabiduría". Sin embargo, también aumenta el riesgo de deterioros como el Alzheimer o la demencia.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">2. Dimensión Emocional</h3>
+                    <p class="text-gray-700">Erikson la define con el conflicto "Integridad vs. Desesperación". Es la etapa de la revisión vital (life review). La integridad se alcanza al aceptar la vida que se vivió, con sus éxitos y fracasos. La desesperación surge del arrepentimiento y el miedo a la muerte. Generalmente, hay una mejor regulación emocional (selectividad socioemocional).</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">3. Dimensión Biológica</h3>
+                    <p class="text-gray-700">La senescencia se acentúa. Los sistemas corporales pierden eficiencia, aumenta la vulnerabilidad a enfermedades crónicas (hipertensión, diabetes, artritis) y los sentidos (vista, oído) disminuyen. La fragilidad física es un riesgo, pero no una certeza.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">4. Dimensión Social y Cultural</h3>
+                    <p class="text-gray-700">La jubilación redefine drásticamente la rutina y el rol social. Puede surgir el rol de abuelo/a. El gran desafío social es el "edadismo" (viejismo) o discriminación por edad, que promueve estereotipos negativos y el aislamiento. La cultura puede venerar o marginar al anciano.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">5. Dimensión de Identidad</h3>
+                    <p class="text-gray-700">La identidad debe adaptarse a la pérdida de roles (trabajador) y a los cambios físicos. La persona se define más por su "ser" (su historia, sus vínculos) que por su "hacer" (su profesión). La transmisión del legado (historias, valores) a las nuevas generaciones se vuelve fundamental.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Recomendaciones Vejez -->
+        <section id="reco-vejez" class="p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-8 border-b-2 border-indigo-200 pb-2">
+                Recomendaciones Útiles en la Vejez
+            </h2>
+            <ul class="list-none space-y-4">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span><strong>Prevenir el Aislamiento:</strong> Fomentar la participación en grupos sociales, clubes, voluntariado o centros de día. Usar la tecnología (con la debida capacitación) para mantener el contacto con familiares y amigos.</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span><strong>Actividad Física Adaptada:</strong> Mantener la movilidad es crucial. Se recomiendan actividades de bajo impacto como caminar, nadar, tai chi o yoga adaptado para prevenir la sarcopenia (pérdida de músculo) y mejorar el equilibrio.</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span><strong>Estimulación Cognitiva:</strong> Promover la "gimnasia cerebral". Leer, escribir, hacer crucigramas, aprender algo nuevo (un idioma, a tocar un instrumento) o participar en talleres de memoria.</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span><strong>Adaptación del Entorno:</strong> Realizar modificaciones en el hogar para prevenir caídas y facilitar la autonomía (buena iluminación, agarraderas en el baño, eliminar alfombras sueltas).</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 8. Llamado al Compromiso Social Empático -->
+        <section id="compromiso" class="p-8 md:p-12 bg-indigo-50 border-t-4 border-indigo-300">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-6">
+                Llamado al Compromiso Social Empático
+            </h2>
+            <p class="text-lg text-gray-800 mb-6">
+                Desde el rol del psicólogo, nuestro compromiso trasciende el diagnóstico. Debemos ser agentes de cambio y promotores de la dignidad en todas las etapas del desarrollo.
+            </p>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Hacia la Adultez:</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Debemos validar las presiones de la adultez, ofreciendo herramientas para la gestión del estrés y la "crisis de la mediana edad". Nuestro rol es ayudar a las personas a renegociar su identidad frente a los cambios de roles (nido vacío, desempleo, divorcio) y a encontrar un equilibrio saludable entre el trabajo, la familia y el autocuidado. Fomentar la generatividad es clave.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Hacia la Vejez:</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Nuestro compromiso más urgente es combatir el edadismo. Debemos educar a la sociedad para desmontar estereotipos negativos. Terapéuticamente, debemos facilitar la "revisión vital", ayudando a encontrar la integridad y a procesar duelos (de seres queridos, de la salud, de roles). Debemos abogar por políticas de envejecimiento activo, promover la autonomía y asegurar un acompañamiento compasivo en el final de la vida.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
